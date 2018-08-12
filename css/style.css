@@ -1,0 +1,162 @@
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.wrapper {
+    background-color: aqua;
+    padding: 0;
+    margin: 0 auto;
+
+}
+
+.wrapper img {
+    width: 150px;
+}
+
+nav {
+    margin: 0;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    width: 40%;
+    color: white;
+    border: 3px solid yellow;
+    padding: .5rem;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+}
+
+.container {
+    background-color: antiquewhite;
+}
+
+body {
+    font-size: 0.75rem;
+
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.masthead {
+    height: 150px;
+    background-image: url(../img/masthead.jpg);
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+}
+
+.footer {
+    background-color: aqua;
+    max-width: 100%;
+    color: yellow;
+    text-align: center;
+    padding: 2rem;
+    font-size: 1rem;
+    margin: 1rem 0;
+}
+
+.footer a {
+    color: yellow;
+}
+
+/*article mobile*/
+
+article img {
+    width: 100%;
+    align-content: center;
+}
+
+article h2 {
+    text-align: center;
+    padding-top: 1rem;
+}
+
+article figcaption {
+    text-align: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1rem;
+}
+
+article p {
+    text-align: left;
+    padding: 1rem;
+    margin: 0 auto;
+}
+
+/*portfolio mobile*/
+
+.portfolio img {
+    width: 100%;
+}
+
+.portfolio figcaption {
+    text-align: center;
+}
+
+
+/*tablet*/
+
+@media all and (min-width: 35rem) {
+
+    /*article tablet*/
+    body {
+        font-size: 1rem;
+
+    }
+    .leftside {
+        width: calc(40% - 1rem);
+        float: left;
+        padding-right: 1rem;
+    }
+    .rightside {
+        width: calc(60% - 1rem);
+        display: inline;
+    }
+    /*    portfolio tablet*/
+    .portfolio {
+        width: calc(35% - 1rem);
+        float: left;
+    }
+    .footer {
+        clear: both;
+    }
+}
+
+/*desktop*/
+
+@media screen and (min-width: 60rem) {
+    body {
+        font-size: 1.25rem;
+
+    }
+
+    /*    portfolio desktop*/
+    .portfolio {
+        width: calc(30% - 2rem);
+        float: left;
+        margin: 0;
+        padding: 1rem;
+    }
+    .portfolio img {
+        max-width: 100%;
+        height: 325px;
+    }
+
+    .footer {
+        clear: both;
+    }
+}
